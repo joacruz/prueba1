@@ -1,0 +1,137 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lady Barber</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            background-image: url('imagenes/fondo.jpg'); /* ← Cambiado para que funcione correctamente */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Menú lateral */
+        nav {
+            width: 200px;
+            background-color: #333;
+            height: 100vh;
+            padding: 20px 10px;
+            color: white;
+            position: fixed;
+        }
+
+        nav h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Contenido principal */
+        main {
+            margin-left: 220px;
+            padding: 20px;
+            flex: 1;
+            min-height: 100vh;
+        }
+
+        section {
+            margin-bottom: 40px;
+            background-color: white; /* ← Fondo blanco solo para el texto */
+            padding: 20px;
+            border-radius: 8px; /* Opcional para que se vea más suave */
+        }
+
+        h1, h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .trabajos {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .trabajo {
+            background: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .trabajo img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h2>Barbería</h2>
+         <a href="Index.html">Inicio</a>
+        <a href="quienes-somos.html">Quiénes Somos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="trabajos.html">Trabajos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main>
+   
+        <section id="trabajos">
+            <h2>Nuestros Trabajos</h2>
+            <div class="trabajos">
+                <div class="trabajo">
+                    <img src="C:\Users\HP\OneDrive\Documentos\Proyecto Prcial 2__\imagenes\1.jpeg" alt="Corte 1">
+                    <p>Corte moderno - $15</p>
+                </div>
+                <div class="trabajo">
+                    <img src="C:\Users\HP\OneDrive\Documentos\Proyecto Prcial 2__\imagenes\2.jpeg" alt="Corte 2">
+                    <p>Fade clásico - $18</p>
+                </div>
+                <div class="trabajo">
+                    <img src="C:\Users\HP\OneDrive\Documentos\Proyecto Prcial 2__\imagenes\3.jpeg" alt="Barba 1">
+                    <p>Arreglo de barba - $12</p>
+                </div>
+                <div class="trabajo">
+                    <img src="C:\Users\HP\OneDrive\Documentos\Proyecto Prcial 2__\imagenes\4.jpg" alt="Paquete">
+                    <p>Look completo - $30</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+</body>
+</html>
